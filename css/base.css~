@@ -9,7 +9,7 @@ a {
 
 .sidebar {
   position: fixed;
-  left: 15px;
+  left: 20px;
   top: 15px;
   width: 80px;
   font-family: Helvetica, sans-serif; }
@@ -27,7 +27,7 @@ a {
     margin: 10px 0 20px 0; }
     .sidebar .name #fname {
       padding-left: 1px;
-      font-size: 17px;
+      font-size: 23px;
       letter-spacing: 5px;
       color: black; }
     .sidebar .name #lname {
