@@ -4,9 +4,10 @@ permalink: /posts/:title
 rdiscount:
   extensions: [smart]
 
-name: Zach Holman
-url: http://zachholman.com
-description: A fantastic blog that is fantastic.
-twitter: holman
-github: holman
-gravatar_url: http://gravatar.com/avatar/6f63cde8b16b035280ca615f621a6c8c
+name: Sayali Lunkad
+url: http://sayalilunkad.github.io
+twitter: sayalilunkad
+github: sayalilunkad
+gravatar_url: https://s.gravatar.com/avatar/c508e8fdd68e1a8a5b92d71359e700c1?s=80
+
+comment: true

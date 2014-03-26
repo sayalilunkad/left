@@ -13,5 +13,4 @@ title: "Posts"
       {% endunless %}
     {% endfor %}
   </ul>
-<a href="http://sayalilunkad.github.io/talks/OpenStack/OPW.html#/step-1">Presentation for Pune GNUify OpenStack Day Meetup</a>
 </section>
