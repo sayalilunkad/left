@@ -84,7 +84,7 @@ The exercises directory contains the test scripts used to validate and demonstra
 
 Configuring services in OpenStack
 ----------------------------------
-The stackrc is the primary configuration file for DevStack which contains all of the settings that control the services started and the repositories used to download the source for those services. stackrc sources the local.config section of local.conf to perform the default overrides.
+The stackrc is the primary configuration file for DevStack which contains all of the settings that control the services started and the repositories used to download the source for those services. stackrc sources the local.config to perform the default overrides.
 
 By default the following services are enabled when you install OpenStack using Devstack:
 
