@@ -1,0 +1,602 @@
+
+<!-- saved from url=(0058)http://strut.io/editor/preview_export/impress.html#/step-1 -->
+<html style="height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Deck Title</title>
+
+<meta name="description" content="TODO">
+<meta name="author" content="TODO">
+
+<style>
+.componentContainer {
+    position: absolute;
+    line-height: normal;
+    /*-webkit-transform-origin: 135% 135%;
+    -moz-transform-origin: 135% 135%;
+    transform-origin: 135% 135%;*/
+}
+
+.transformContainer {
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<link rel="stylesheet" href="http://strut.io/editor/preview_export/css/themes/default-reset.css">
+<link href="./openstack-dev_files/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://strut.io/editor/preview_export/reveal/css/theme/default.css" id="theme">
+<link href="./openstack-dev_files/web-fonts.css" rel="stylesheet" type="text/css">
+<link href="./openstack-dev_files/backgroundClasses.css" rel="stylesheet" type="text/css">
+<link href="./openstack-dev_files/surfaceClasses.css" rel="stylesheet" type="text/css">
+
+<link rel="shortcut icon" href="http://strut.io/editor/preview_export/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="http://strut.io/editor/preview_export/apple-touch-icon.png" type="image/png">
+
+<style>
+.reveal.themedArea {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+<script async="" src="./openstack-dev_files/analytics.js"></script><script type="text/javascript" src="./openstack-dev_files/dataset-shim.js"></script>
+<script type="text/javascript" src="./openstack-dev_files/impress.js"></script>
+
+<script src="./openstack-dev_files/onready.js"></script>
+<script src="./openstack-dev_files/loadPresentation.js"></script>
+<script>
+ready(function() {
+    if (document.getElementById('launched-placeholder'))
+        loadPresentation();
+
+    if (!window.presStarted) {
+        startPres(document, window);
+        impress().init();   
+    }
+
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = 
+            "<p>Tap on the left or right to navigate</p>";
+    }
+});
+</script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-42322531-1', 'strut.io');
+    ga('send', 'pageview');
+    </script>
+<style type="text/css"></style></head>
+<body class="impress-supported impress-enabled" style="height: 100%; overflow: hidden;" data-pinterest-extension-installed="cr1.35">
+<style type="text/css">
+
+</style>
+<style>
+
+</style>
+<style>
+
+
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+	
+
+</style>
+<!-- This is a work around / hack to get the user's browser to download the fonts 
+ if they decide to save the presentation. -->
+<div style="visibility: hidden; width: 0px; height: 0px">
+<img src="./openstack-dev_files/Lato-Bold.woff">
+<img src="./openstack-dev_files/HammersmithOne.woff">
+<img src="./openstack-dev_files/Droid-Sans-Mono.woff">
+<img src="./openstack-dev_files/Gorditas-Regular.woff">
+<img src="./openstack-dev_files/FredokaOne-Regular.woff">
+<img src="./openstack-dev_files/Ubuntu.woff">
+<img src="./openstack-dev_files/Ubuntu-Bold.woff">
+<img src="./openstack-dev_files/PressStart2P-Regular.woff">
+<img src="./openstack-dev_files/Lato-BoldItalic.woff">
+<img src="./openstack-dev_files/AbrilFatface-Regular.woff">
+<img src="./openstack-dev_files/Lato-Regular.woff">
+</div>
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div class="bg  strut-surface">
+<div class="bg innerBg strut-slide-0">
+<div id="impress" style="position: absolute; transform-origin: left top 0px; transition: all 500ms ease-in-out 250ms; -webkit-transition: all 500ms ease-in-out 250ms; transform-style: preserve-3d; top: 50%; left: 50%; transform: perspective(3840px) scale(0.260416666666667);"><div style="position: absolute; transform-origin: left top 0px; transition: all 500ms ease-in-out 0ms; -webkit-transition: all 500ms ease-in-out 0ms; transform-style: preserve-3d; transform: rotateZ(0deg) rotateY(0deg) rotateX(0deg) translate3d(-2061.65333333333px, -3302.4px, 0px);">
+	
+		
+			<div class="step present active" data-state="strut-slide-0" data-x="2061.653333333333" data-y="3302.4" data-scale="3" id="step-1" style="position: absolute; transform: translate(-50%, -50%) translate3d(2061.65333333333px, 3302.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-0" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			
+			</div>
+			
+			<div class="componentContainer " style="top: 271px; left: 137px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<div style="font-size: 72px;" class="antialias">
+<font>OpenStack Development</font>
+</div>
+</div>
+</div>
+			
+			<div class="componentContainer " style="top: 512px; left: 772px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-1" data-x="6280.533333333334" data-y="2764.8" data-scale="3" id="step-2" style="position: absolute; transform: translate(-50%, -50%) translate3d(6280.53333333333px, 2764.8px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-1" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="creating-openstack-dev-environment-using-devstack-">Creating OpenStack dev environment using <strong>DevStack</strong></h4>
+<hr>
+<ul>
+<li><p>Devstack is a shell script used to deploy a complete OpenStack development environment.</p>
+<ul>
+<li><p>Clone the devstack repo which contains a script that will install OpenStack.</p>
+<pre><code>  $    git clone https://github.com/openstack-dev/devstack.git</code></pre>
+</li>
+<li><p>Now you will find a devstack directory where you cloned the repo</p>
+<pre><code>  $ cd devstack</code></pre>
+</li>
+<li><p>Run the script to install OpenStack</p>
+<pre><code>   $ ./stack.sh</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-2" data-x="9980.586666666666" data-y="6712.32" data-scale="3" id="step-3" style="position: absolute; transform: translate(-50%, -50%) translate3d(9980.58666666667px, 6712.32px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-2" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="what-the-scripts-do-">What the scripts do?</h4>
+<hr>
+<ul>
+<li><p><strong>stack.sh</strong>:
+  We have run this script initially to install Openstack. </p>
+</li>
+<li><p><strong>unstack.sh</strong>:
+  Stops all the services started by stack.sh (mostly) mysql and rabbit are left 
+  running as OpenStack code refreshes do not require them to be restarted.</p>
+</li>
+<li><p><strong>rejoin-stack.sh</strong>:
+  This script rejoins an existing screen, or re-creates a screen session from a 
+  previous run of stack.sh.</p>
+</li>
+<li><p><strong>run_test.sh</strong>:
+  Runs style checking tools in devstack.</p>
+</li>
+<li><p><strong>clean.sh</strong>:
+  Does its best to eradicate traces of a Grenade run.</p>
+</li>
+<li><p><strong>exercise.sh</strong>:
+ This script runs all the examples present in the devstack/exercises directory 
+ and reports on the results.</p>
+</li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-3" data-x="13803.52" data-y="2396.16" data-scale="3" id="step-4" style="position: absolute; transform: translate(-50%, -50%) translate3d(13803.52px, 2396.16px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-3" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="default-services-provided-by-devstack">Default services provided by Devstack</h4>
+<hr>
+<ul>
+<li>Nova  (API, Certificate, Object Store, Compute, Network, Scheduler, VNC proxies, Certificate Authentication)</li>
+<li>Cinder (Scheduler, API, Volume)</li>
+<li>Glance (API and Registry)</li>
+<li>Horizon</li>
+<li>Keystone</li>
+<li>MYSQL</li>
+<li>RabbitMQ</li>
+<li>Tempest</li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-4" data-x="17558.18666666667" data-y="5852.16" data-scale="3" id="step-5" style="position: absolute; transform: translate(-50%, -50%) translate3d(17558.1866666667px, 5852.16px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-4" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="adding-additional-openstack-services-to-devstack">Adding additional OpenStack services to Devstack</h4>
+<hr>
+<ul>
+<li><p>Additional services that are not enabled by default can be enabled in the <strong>local.config</strong>.</p>
+</li>
+<li><p>Examples:</p>
+<ul>
+<li><p><strong>Swift - Object Storage</strong></p>
+<pre><code>  ENABLED_SERVICES+=,s-proxy,s-object,s-container,s-account</code></pre>
+</li>
+<li><p><strong>Ceilometer - Metering Service</strong></p>
+<pre><code>  ENABLED_SERVICES+=,ceilometer-acompute,ceilometer-acentral,
+  ceilometer-collector,ceilometer-api
+  ENABLED_SERVICES+=,ceilometer-alarm-notify,ceilometer-alarm-eval</code></pre>
+</li>
+<li><p><strong>Neutron - Networking Service</strong></p>
+<pre><code>  ENABLED_SERVICES+=,q-svc,q-agt,q-dhcp,q-l3,q-meta,neutron</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-5" data-x="21312.853333333333" data-y="-153.6" data-scale="3" id="step-6" style="position: absolute; transform: translate(-50%, -50%) translate3d(21312.8533333333px, -153.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-5" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h3 id="where-is-the-code-">Where is the code?</h3>
+<hr>
+<ul>
+<li><p>All the code related to OpenStack will be found here in</p>
+<pre><code>  /opt/stack/project_name</code></pre>
+</li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-6" data-x="25463.466666666667" data-y="5345.28" data-scale="3" id="step-7" style="position: absolute; transform: translate(-50%, -50%) translate3d(25463.4666666667px, 5345.28px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-6" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="openstack-workflow-management-tools">Openstack workflow management tools</h4>
+<ul>
+<li><p>Gerrit- Web-based code review tool built on top of the git version control 
+  system intended to provide a light weight framework for reviewing every 
+  commit before it is accepted into the code base</p>
+</li>
+<li><p>Launchpad - The web interface for the Gerrit Code Review system will identify 
+  you using launchpad <a href="https://launchpad.net/">https://launchpad.net/</a></p>
+</li>
+<li><p>Code Review - Web interface for Gerrit <a href="https://review.openstack.org/">https://review.openstack.org</a></p>
+</li>
+<li><p>"git-review"- Tool which is a git subcommand that handles all the details 
+  of working with Gerrit</p>
+</li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-7" data-x="29477.546666666665" data-y="7649.28" data-scale="3" id="step-8" style="position: absolute; transform: translate(-50%, -50%) translate3d(29477.5466666667px, 7649.28px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-7" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="workflow">Workflow</h4>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 82px; left: 29px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: px; height: px;">
+<div class="transformContainer" style="-webkit-transform: scale(1, 1);
+-moz-transform: scale(1, 1);
+transform: scale(1, 1)">
+<img src="./openstack-dev_files/LB4mpNR.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-8" data-x="33300.48" data-y="5114.88" data-scale="3" id="step-9" style="position: absolute; transform: translate(-50%, -50%) translate3d(33300.48px, 5114.88px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-8" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="setting-up-required-accounts-for-contributing-to-openstack">Setting up required accounts for contributing to OpenStack</h4>
+<ul>
+<li>Launchpad account: <a href="https://login.launchpad.net/+login">https://login.launchpad.net/+login</a></li>
+<li>Join the OpenStack foundation: <a href="https://www.openstack.org/join/">https://www.openstack.org/join/</a></li>
+<li>Sign in to  <a href="https://review.openstack.org/">https://review.openstack.org/</a> using your launchpad credentials</li>
+<li>Sign the appropriate Individual Contributor License Agreement:
+  <a href="https://review.openstack.org/login/settings/agreements">https://review.openstack.org/login/settings/agreements</a></li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-9" data-x="36986.88" data-y="8924.16" data-scale="3" id="step-10" style="position: absolute; transform: translate(-50%, -50%) translate3d(36986.88px, 8924.16px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-9" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="setting-your-local-environment-to-contribute-upstream">Setting your local environment to contribute upstream</h4>
+<ul>
+<li>Create an ssh-key on your machine<pre><code>  ssh-kegen</code></pre>
+</li>
+<li><p>Upload an ssh-key to Gerrit at review.openstack.org</p>
+<pre><code>  cat ~/.ssh/id_rsa.pub</code></pre>
+</li>
+<li><p>Run these steps to let git know about your email address:</p>
+<pre><code>  git config --global user.name "Firstname Lastname"
+  git config --global user.email "your_email@youremail.com"</code></pre>
+</li>
+<li><p>Install git-review</p>
+<pre><code>  pip install git-review</code></pre>
+</li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-10" data-x="40673.28" data-y="3240.96" data-scale="3" id="step-11" style="position: absolute; transform: translate(-50%, -50%) translate3d(40673.28px, 3240.96px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-10" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="sending-a-patch-upstream-">Sending a patch Upstream!!</h4>
+<ul>
+<li><p>Clone the project repository you want to work on: </p>
+<pre><code>  git://git.openstack.org/openstack-dev/sandbox</code></pre>
+<ul>
+<li>Sandbox: This is a sandbox so that lovely developers can test the tools and processes
+  used for OpenStack development.</li>
+</ul>
+</li>
+<li><p>Go to the project directory:    </p>
+<pre><code>  cd sandbox</code></pre>
+</li>
+<li><p>Make git-review configure your project to know about your Gerrit</p>
+<pre><code>  git review -s</code></pre>
+</li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-11" data-x="44509.86666666667" data-y="7065.6" data-scale="3" id="step-12" style="position: absolute; transform: translate(-50%, -50%) translate3d(44509.8666666667px, 7065.6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-11" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h4 id="sending-a-patch-upstream-">Sending a patch Upstream!!</h4>
+<ul>
+<li><p>Now make the changes you want to the project</p>
+</li>
+<li><p>Add the files to which you have made changes</p>
+<pre><code>  git add .</code></pre>
+</li>
+<li>Commit your changes<pre><code>  git commit -a</code></pre>
+</li>
+<li>Push your changes upstream<pre><code>  git review</code></pre>
+</li>
+</ul>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+		
+			<div class="step future" data-state="strut-slide-12" data-x="48332.8" data-y="11366.4" data-scale="3" id="step-13" style="position: absolute; transform: translate(-50%, -50%) translate3d(48332.8px, 11366.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(3); transform-style: preserve-3d;">
+			<div class=" slideContainer strut-slide-12" style="width: 1024px; height: 768px;">
+			<div class="themedArea">
+			<h3 id="questions-">Questions??</h3>
+
+			</div>
+			
+			<div class="componentContainer " style="top: 591px; left: 836px; -webkit-transform:   ; -moz-transform:   ; transform:   ; width: 164px; height: 164px;">
+<div class="transformContainer" style="-webkit-transform: scale(0.76, 0.76);
+-moz-transform: scale(0.76, 0.76);
+transform: scale(0.76, 0.76)">
+<img src="./openstack-dev_files/kYRJXyb.png">
+</div>
+</div>
+			
+			</div>
+		
+		</div>
+	
+	<div id="overview" class="step future" data-state="strut-slide-overview" data-x="25197.226666666666" data-y="5606.4" data-scale="9" style="position: absolute; transform: translate(-50%, -50%) translate3d(25197.2266666667px, 5606.4px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(9); transform-style: preserve-3d;"></div>
+	
+</div></div>
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+</div>
+</div><span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body></html>

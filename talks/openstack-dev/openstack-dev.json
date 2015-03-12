@@ -1,0 +1,435 @@
+{
+  "slides": [
+    {
+      "components": [
+        {
+          "TextBox": {},
+          "x": 137,
+          "y": 271,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "type": "TextBox",
+          "text": "<font>OpenStack Development</font>",
+          "size": 72,
+          "selected": false
+        },
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 772,
+          "y": 512,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 0,
+      "selected": true,
+      "active": true,
+      "x": 151,
+      "y": 215
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 1,
+      "selected": false,
+      "active": false,
+      "markdown": "#### Creating OpenStack dev environment using **DevStack**\n------------------------------\n\n* Devstack is a shell script used to deploy a complete OpenStack development environment.\n\n\t* Clone the devstack repo which contains a script that will install OpenStack.\n    \n\t\t\t$\tgit clone https://github.com/openstack-dev/devstack.git\n\n\t* Now you will find a devstack directory where you cloned the repo\n\n\t\t\t$ cd devstack\n\n\t*\tRun the script to install OpenStack\n    \n    \t\t\t$ ./stack.sh\n            \n            \n",
+      "x": 460,
+      "y": 180
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 2,
+      "selected": false,
+      "active": false,
+      "x": 731,
+      "y": 437,
+      "markdown": "#### What the scripts do?\n-------------------\n\n\n* **stack.sh**:\n\tWe have run this script initially to install Openstack. \n    \n* **unstack.sh**:\n\tStops all the services started by stack.sh (mostly) mysql and rabbit are left \n    running as OpenStack code refreshes do not require them to be restarted.\n\n* **rejoin-stack.sh**:\n\tThis script rejoins an existing screen, or re-creates a screen session from a \n    previous run of stack.sh.\n\t\n* **run_test.sh**:\n\tRuns style checking tools in devstack.\n    \n* **clean.sh**:\n\tDoes its best to eradicate traces of a Grenade run.\n    \n6. **exercise.sh**:\n\tThis script runs all the examples present in the devstack/exercises directory \n    and reports on the results.\n"
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 3,
+      "selected": false,
+      "active": false,
+      "x": 1011,
+      "y": 156,
+      "markdown": "#### Default services provided by Devstack\n-----------------------------------\n\n* Nova  (API, Certificate, Object Store, Compute, Network, Scheduler, VNC proxies, Certificate Authentication)\n* Cinder (Scheduler, API, Volume)\n* Glance (API and Registry)\n* Horizon\n* Keystone\n* MYSQL\n* RabbitMQ\n* Tempest\n"
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 4,
+      "selected": false,
+      "active": false,
+      "markdown": "#### Adding additional OpenStack services to Devstack\n---------------------------------------------\n\n* Additional services that are not enabled by default can be enabled in the **local.config**.\n\n* Examples:\n\t* **Swift - Object Storage**\n\n\t\t\tENABLED_SERVICES+=,s-proxy,s-object,s-container,s-account\n\n\t* **Ceilometer - Metering Service**\n\n\t\t\tENABLED_SERVICES+=,ceilometer-acompute,ceilometer-acentral,\n            ceilometer-collector,ceilometer-api\n\t\t\tENABLED_SERVICES+=,ceilometer-alarm-notify,ceilometer-alarm-eval\n\n\t* **Neutron - Networking Service**\n\n\t\t\tENABLED_SERVICES+=,q-svc,q-agt,q-dhcp,q-l3,q-meta,neutron",
+      "x": 1286,
+      "y": 381
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 5,
+      "selected": false,
+      "active": false,
+      "x": 1561,
+      "y": -10,
+      "markdown": "### Where is the code?\n----------------------\n\n* All the code related to OpenStack will be found here in\n\n\t\t/opt/stack/project_name\n"
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 6,
+      "selected": false,
+      "active": false,
+      "markdown": "#### Openstack workflow management tools\n\n* Gerrit- Web-based code review tool built on top of the git version control \n\tsystem intended to provide a light weight framework for reviewing every \n    commit before it is accepted into the code base\n\n* Launchpad - The web interface for the Gerrit Code Review system will identify \n\tyou using launchpad https://launchpad.net/\n\n* Code Review - Web interface for Gerrit https://review.openstack.org\n\n* \"git-review\"- Tool which is a git subcommand that handles all the details \n\tof working with Gerrit\n",
+      "x": 1865,
+      "y": 348
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/LB4mpNR.png",
+          "type": "Image",
+          "x": 29,
+          "y": 82,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 7,
+      "selected": false,
+      "active": false,
+      "markdown": "#### Workflow\n",
+      "x": 2159,
+      "y": 498
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 8,
+      "selected": false,
+      "active": false,
+      "markdown": "#### Setting up required accounts for contributing to OpenStack\n\n* Launchpad account: https://login.launchpad.net/+login\n* Join the OpenStack foundation: https://www.openstack.org/join/\n* Sign in to  https://review.openstack.org/ using your launchpad credentials\n* Sign the appropriate Individual Contributor License Agreement:\n\thttps://review.openstack.org/login/settings/agreements\n",
+      "x": 2439,
+      "y": 333
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 9,
+      "selected": false,
+      "active": false,
+      "markdown": "#### Setting your local environment to contribute upstream\n\n* Create an ssh-key on your machine\n\t\tssh-kegen\n* Upload an ssh-key to Gerrit at review.openstack.org\n\t\tcat ~/.ssh/id_rsa.pub\n\n* Run these steps to let git know about your email address:\n\n\t\tgit config --global user.name \"Firstname Lastname\"\n\t\tgit config --global user.email \"your_email@youremail.com\"\n \n* Install git-review\n\t\tpip install git-review\n ",
+      "x": 2709,
+      "y": 581
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 10,
+      "selected": false,
+      "active": false,
+      "markdown": "#### Sending a patch Upstream!!\n\n\n* Clone the project repository you want to work on: \n\t\tgit://git.openstack.org/openstack-dev/sandbox\n      \n\t* Sandbox: This is a sandbox so that lovely developers can test the tools and processes\n\t\tused for OpenStack development.\n\n* Go to the project directory:\t\n\t\tcd sandbox\n\n* Make git-review configure your project to know about your Gerrit\n\t\tgit review -s\n        \n",
+      "x": 2979,
+      "y": 211
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 11,
+      "selected": false,
+      "active": false,
+      "markdown": "#### Sending a patch Upstream!!\n\n\n* Now make the changes you want to the project\n\n* Add the files to which you have made changes\n\t\tgit add .\n* Commit your changes\n\t\tgit commit -a\n* Push your changes upstream\n\t\tgit review",
+      "x": 3260,
+      "y": 460
+    },
+    {
+      "components": [
+        {
+          "src": "http://i.imgur.com/kYRJXyb.png",
+          "type": "Image",
+          "x": 836,
+          "y": 591,
+          "scale": {
+            "x": 0.7592592592592593,
+            "y": 0.7592592592592593,
+            "width": 164,
+            "height": 164
+          },
+          "imageType": "PNG",
+          "selected": false
+        }
+      ],
+      "z": 0,
+      "impScale": 3,
+      "rotateX": 0,
+      "rotateY": 0,
+      "rotateZ": 0,
+      "index": 12,
+      "selected": false,
+      "active": false,
+      "markdown": "### Questions??\n",
+      "x": 3540,
+      "y": 740
+    }
+  ],
+  "activeSlide": {
+    "components": [
+      {
+        "TextBox": {},
+        "x": 137,
+        "y": 271,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "type": "TextBox",
+        "text": "<font>OpenStack Development</font>",
+        "size": 72,
+        "selected": false
+      },
+      {
+        "src": "http://i.imgur.com/kYRJXyb.png",
+        "type": "Image",
+        "x": 772,
+        "y": 512,
+        "scale": {
+          "x": 1,
+          "y": 1
+        },
+        "imageType": "PNG",
+        "selected": false
+      }
+    ],
+    "z": 0,
+    "impScale": 3,
+    "rotateX": 0,
+    "rotateY": 0,
+    "rotateZ": 0,
+    "index": 0,
+    "selected": true,
+    "active": true,
+    "x": 151,
+    "y": 215
+  },
+  "fileName": "openstack-dev",
+  "deckVersion": "1.0",
+  "customBackgrounds": {
+    "bgs": []
+  },
+  "overviewX": 1845.5,
+  "overviewY": 365
+}
