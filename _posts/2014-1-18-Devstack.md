@@ -10,7 +10,7 @@ So lets begin with the setup!
 
 Initial Setup
 --------------
-I am using 64-bit Ubuntu 12.04 for demonstating the setup.
+I am using 64-bit Ubuntu 12.04 for demonstating the setup. Please use the latest LTS version of Ubuntu Server or some other supported Linux distro of your choice.
 
 1. [Install VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads)
 2. Create a new virtual machine with minimum 2GB RAM (required for Devstack to run well) and install 64-bit Ubuntu 12.04
