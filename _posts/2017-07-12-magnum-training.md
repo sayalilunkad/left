@@ -26,14 +26,16 @@ consuming because magnum in general takes times to create a cluster especially i
 resources but we provided transcripts for everything the participants could go back at any point and
 continue with the debugging.
 
-You can download the material used for the training [here](https://w3.nue.suse.com/~jgrassler/SOC7-Training-Magnum.tar.bz2).
+You can download the material used for the training [here](http://btw23.de/johannes/files/SOC7-Training-Magnum.tar.bz2).
 The training is split into two parts the intro and handson. The intro explains magnum in detail along
 with the architecture and the handson is more like the troubleshooting guide. The tarball contains all
 the slides, scripts used for creating and fixing the sabotage and various other small tasks and also
 the transcripts.
 
 PS: Some parts of this training are specific to SUSE OpenStack Cloud but most of it should
-be usable on any OpenStack Cloud or at least easily modifiable.
+be usable on any OpenStack Cloud or at least easily modifiable. Nonetheless, we will submit
+a modified version of this talk for the upcoming OpenStack Summit which will be completely
+generic.
 
 Go ahead and download the material and let me know if you found it helpful :). Most of the
 feedback that we got from the participants at the training was very positive so I hope it helps
