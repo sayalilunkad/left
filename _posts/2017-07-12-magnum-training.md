@@ -11,7 +11,7 @@ I have been working on various different things since I started at SUSE which in
 new features into our SUSE OpenStack Cloud product, going through product releases(we recently
 released SOC7), fixing bugs in the product and of course OpenStack upstream. Previously I worked on
 parts of horizon, neutron and barbican and currently my focus is on magnum. This post is mainly
-about a training I conducted along with one of my colleague, [Johannes Grassler] (https://github.com/jgrassler/)
+about a training I conducted along with one of my colleague, [Johannes Grassler](https://github.com/jgrassler/)
 on Magnum.
 
 Magnum Training
@@ -26,7 +26,7 @@ consuming because magnum in general takes times to create a cluster especially i
 resources but we provided transcripts for everything the participants could go back at any point and
 continue with the debugging.
 
-You can download the material used for the training [here] (https://w3.nue.suse.com/~jgrassler/SOC7-Training-Magnum.tar.bz2).
+You can download the material used for the training [here](https://w3.nue.suse.com/~jgrassler/SOC7-Training-Magnum.tar.bz2).
 The training is split into two parts the intro and handson. The intro explains magnum in detail along
 with the architecture and the handson is more like the troubleshooting guide. The tarball contains all
 the slides, scripts used for creating and fixing the sabotage and various other small tasks and also
