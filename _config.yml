@@ -1,8 +1,5 @@
-markdown: rdiscount
-pygments: true
+highlighter: rouge
 permalink: /posts/:title
-rdiscount:
-  extensions: [smart]
 
 name: Sayali Lunkad
 url: http://sayalilunkad.github.io
